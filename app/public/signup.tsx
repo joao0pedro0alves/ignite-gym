@@ -1,9 +1,9 @@
 import { Text, View, ScrollView } from 'react-native'
 import { useRouter } from 'expo-router'
 
-import { Button } from './components/Button'
-import { Logo } from './components/Logo'
-import { TextInput } from './components/TextInput'
+import { Button } from '../components/Button'
+import { Logo } from '../components/Logo'
+import { TextInput } from '../components/TextInput'
 
 export default function Signup() {
   const router = useRouter()

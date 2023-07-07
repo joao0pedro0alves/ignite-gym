@@ -1,12 +1,16 @@
 import { Text, View } from 'react-native'
 import { useRouter } from 'expo-router'
 
-import { Button } from './components/Button'
-import { Logo } from './components/Logo'
-import { TextInput } from './components/TextInput'
+import { Button } from '../components/Button'
+import { Logo } from '../components/Logo'
+import { TextInput } from '../components/TextInput'
 
 export default function Login() {
   const router = useRouter()
+
+  function handleSignin() {
+    router.push('/home')
+  }
 
   function handleSignup() {
     router.push('/signup')
@@ -31,7 +35,7 @@ export default function Login() {
         </View>
 
         <View className="mb-28">
-          <Button label="Acessar" />
+          <Button onPress={handleSignin} label="Acessar" />
         </View>
 
         <View className="gap-3">
